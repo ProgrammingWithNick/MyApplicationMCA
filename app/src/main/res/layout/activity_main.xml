@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey 👍"
+            android:textSize="36sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingBottom="24dp"/>
+
+        <!-- Buttons with different colors -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Click Me..."
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4500"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Task03"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#32CD32"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Task04"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E90FF"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ListView"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF69B4"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Actv"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFD700"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Calculator"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00CED1"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="RecActivity"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8A2BE2"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="OptionMenu"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6347"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Animation"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#20B2AA"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6_ACTV">
+
+    <AutoCompleteTextView
+        android:id="@+id/av1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select country"
+        android:textSize="16sp" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/mav1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select multiple countries" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
