@@ -2,8 +2,8 @@ package com.example.myapplication;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity10VideoView extends AppCompatActivity {
+
     Button btn1;
     VideoView vv;
 
@@ -32,18 +33,15 @@ public class MainActivity10VideoView extends AppCompatActivity {
         vv = findViewById(R.id.vv);
         btn1 = findViewById(R.id.btn);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Add your video file path or URL here
-                // For local video in res/raw folder: "android.resource://" + getPackageName() + "/" + R.raw.your_video_file
-                // For online video: "https://www.example.com/video.mp4"
+        // Add media controls (play/pause/seek)
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(vv);
+        vv.setMediaController(mediaController);
 
-                String videoPath = "android.resource://raw" + getPackageName() + "/" + R.raw.sample_video;
-                Uri localUri = Uri.parse(videoPath);
-                vv.setVideoURI(localUri);
-                vv.start();
-            }
+        btn1.setOnClickListener(v -> {
+            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sample_video);
+            vv.setVideoURI(uri);
+            vv.start();
         });
     }
 }
