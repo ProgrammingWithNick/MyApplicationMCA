@@ -126,5 +126,16 @@
             android:layout_marginBottom="12dp"
             android:background="?android:attr/selectableItemBackground"/>
 
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="VideoPlay"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#20B2AA"
+            android:layout_marginBottom="12dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
     </LinearLayout>
 </ScrollView>

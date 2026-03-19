@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity10VideoView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity10_Animation"
             android:exported="false" />
         <activity

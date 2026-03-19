@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     TextView txt1,txt2;
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn8,btn9,btn10;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn8,btn9,btn10,btn11;
     EditText et1;
 
 
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btn8=findViewById(R.id.btn8);
         btn9=findViewById(R.id.btn9);
         btn10=findViewById(R.id.btn10);
+        btn11=findViewById(R.id.btn11);
+
 
 
 
@@ -115,6 +117,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MainActivity10VideoView.class);
+                startActivity(i);
+
+            }
+        });
+
 
 
 
