@@ -33,7 +33,7 @@ public class MainActivity10VideoView extends AppCompatActivity {
         vv = findViewById(R.id.vv);
         btn1 = findViewById(R.id.btn);
 
-        // Add media controls (play/pause/seek)
+        // Add media controls === play/pause/seek
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(vv);
         vv.setMediaController(mediaController);
