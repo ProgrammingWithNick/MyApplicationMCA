@@ -1,9 +1,3 @@
 
 MyApplicationMCA
 ...
-..
-.
-.
-.
-.
-.
